@@ -4,9 +4,15 @@ notesobj = []; // make an array.
 let addBtn = document.getElementById("addBtn"); // 1. we created a event listeners for the Add note button
 addBtn.addEventListener('click', function (e) {
     let addTxt = document.getElementById("addTxt"); // we created a addtxt to get the element access of textarea were we are writing the note so that we can get the value what we wrote there.
-    notesobj.push(addTxt.value); // as it array so we are using array function push the value of add.txt in it.
+    let addTitle = document.getElementById("addTitle");
+    myobj = {
+        title: addTitle.value,
+        text: addTxt.value,
+    }
+    notesobj.push(myobj); // as it array so we are using array function push the value of add.txt in it.
     localStorage.setItem("notes", JSON.stringify(notesobj)); // now to convert the array in Json String object.
     addTxt.value = ""; // to make it balnk the aftering adding the node
+    addTitle.value = ""; // to make it balnk the aftering adding the node
     showNotes();
 })
 
@@ -22,8 +28,8 @@ function showNotes() {
 
             html += `<div class="noteCard my-2 mx-2 card" style="width: 18rem;">
             <div class="card-body">
-            <h5 class="card-title"> Note ${index + 1} </h5>
-            <p class="card-text">${element}</p>
+            <h5 class="card-title"> ${element.title} </h5>
+            <p class="card-text">${element.text}</p>
             <button id = "${index}" onclick ="deleteNote(this.id)" class="btn btn-primary">Delete Note</button>  
             </div>
             </div>`
