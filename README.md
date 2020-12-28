@@ -1,4 +1,4 @@
-<h1 align="center"> 💥 Notes-Taking-App-Js-Project 💥 </h1>
+<h1 align="center"> 💥 Magic Notes App💥 </h1>
 <p>A note-taking app in Vanilla JavaScript.</p>
 <p>Functionality of adding and deleting and Searching a note</p>
 
