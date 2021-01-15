@@ -96,7 +96,8 @@
     let addBtn = document.getElementById("addBtn"); // 1. we created a event listeners for the Add note button
     addBtn.addEventListener('click', function (e) {
         let addTxt = document.getElementById(
-        "addTxt"); // we created a addtxt to get the element access of textarea were weare writing the note so that we can get the value what we wrote there.
+            "addTxt"
+        ); // we created a addtxt to get the element access of textarea were weare writing the note so that we can get the value what we wrote there.
         let addTitle = document.getElementById("addTitle");
         myobj = {
             title: addTitle.value,
@@ -104,7 +105,7 @@
         }
         notesobj.push(myobj); // as it array so we are using array function push the value of add.txt in it.
         localStorage.setItem("notes", JSON.stringify(
-        notesobj)); // now to convert the array in Json String object.
+            notesobj)); // now to convert the array in Json String object.
         addTxt.value = ""; // to make it balnk the aftering adding the node
         addTitle.value = ""; // to make it balnk the aftering adding the node
         showNotes();
@@ -154,7 +155,7 @@
         let notecards = document.getElementsByClassName('noteCard');
         Array.from(notecards).forEach(function (element) {
             let cardtxt = element.getElementsByTagName("p")[0]
-            .innerText; // as only one p tag thats wgy [0]
+                .innerText; // as only one p tag thats wgy [0]
             if (cardtxt.includes(inptval)) {
                 element.style.display = "block";
             } else {
@@ -163,6 +164,7 @@
             }
         })
     })
+    
 </script>
 
 </html>
