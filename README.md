@@ -1,6 +1,7 @@
-<h1 align="center"> 💥 Note taking App💥 </h1>
-<p>A note-taking app in Vanilla JavaScript.</p>
-<p>Functionality of adding,deleting and Searching a note</p>
+# Note taking App using Vanilla Js
 
-####
-![alt text](https://github.com/DurgeshRai04/Notes-Taking-App-Js-Project/blob/master/img.png)
+## Description
+
+This is a personal project for learning purpose a note-taking app with functionality of adding , deleting and Searching a note build with using bootstrap and Vanilla javascript.
+
+![JavaScript App](https://github.com/DurgeshRai04/Notes-Taking-App-Js-Project/blob/master/img.png)
