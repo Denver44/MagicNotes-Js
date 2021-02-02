@@ -4,4 +4,4 @@
 
 This is a personal project for learning purpose a note-taking app with functionality of adding , deleting and Searching a note build with using bootstrap and Vanilla javascript.
 
-![JavaScript App](https://github.com/Denver44/Notes-Taking-App-Js-Project/blob/master/img.png)
+![JavaScript App](https://raw.githubusercontent.com/Denver44/MagicNotes-Js/master/img.png)
